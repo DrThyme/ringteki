@@ -295,8 +295,8 @@ const Effects = {
             apply: function(card, context) {
                 context.game.currentConflict.addElement(element);
             },
-            unapply: function(card, context) {
-                context.game.currentConflict.removeElement(element);
+            unapply: function() {
+                // nothing happens when this effect expires.
             }
         };
     },
